@@ -1,0 +1,52 @@
+#contact {
+  padding: 130px 0;
+  background: var(--bg);
+}
+
+.contact-inner {
+  max-width: 640px;
+}
+
+.contact-email {
+  display: inline-block;
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  color: var(--fg);
+  letter-spacing: -0.02em;
+  border-bottom: 2px solid var(--blue);
+  padding-bottom: 2px;
+  margin-bottom: 48px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.contact-email:hover { color: var(--blue); }
+
+.social-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1.5px solid color-mix(in srgb, var(--fg) 15%, transparent);
+  color: var(--fg-muted);
+  transition: all var(--transition);
+}
+
+.social-link:hover {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--fg);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .social-row { flex-wrap: wrap; }
+}

@@ -1,0 +1,98 @@
+#about {
+  padding: 130px 0;
+  background: var(--bg);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-portrait {
+  aspect-ratio: 4/5;
+  border-radius: 16px;
+  background: var(--bg2);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-portrait::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    color-mix(in srgb, var(--fg) 4%, transparent) 0px,
+    color-mix(in srgb, var(--fg) 4%, transparent) 1px,
+    transparent 1px,
+    transparent 16px
+  );
+}
+
+.portrait-label {
+  position: absolute;
+  bottom: 20px; left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.72rem;
+  font-family: monospace;
+  color: var(--fg-muted);
+  white-space: nowrap;
+}
+
+.about-content { padding-top: 8px; }
+
+.about-content p {
+  font-size: 1.0rem;
+  color: var(--fg-muted);
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.about-content p strong {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.skills-heading {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg);
+  margin: 36px 0 16px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-chip {
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: color-mix(in srgb, var(--blue) 10%, transparent);
+  color: var(--blue);
+  border: 1px solid color-mix(in srgb, var(--blue) 25%, transparent);
+}
+
+.thumb-color {
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .about-portrait {
+    aspect-ratio: 4/3;
+    max-height: 320px;
+  }
+}
