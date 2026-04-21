@@ -73,3 +73,9 @@ section { width: 100%; }
   opacity: 1;
   transform: none;
 }
+
+@media (max-width: 600px) {
+  .container { padding: 0 24px; }
+  .section-label { margin-bottom: 14px; }
+  .section-heading { font-size: 1.7rem; margin-bottom: 20px; }
+}

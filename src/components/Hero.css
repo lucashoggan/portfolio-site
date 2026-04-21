@@ -130,3 +130,35 @@
   50%  { left: 0%; }
   100% { left: 100%; }
 }
+
+@media (max-width: 600px) {
+  .hero-accent {
+    width: 240px;
+    height: 240px;
+    top: -60px;
+    right: -60px;
+  }
+
+  .hero-accent-2 { display: none; }
+
+  .hero-eyebrow {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .hero-eyebrow::before { width: 20px; }
+
+  .hero-name { font-size: 2.8rem; }
+
+  .hero-tagline {
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+  }
+
+  .btn-primary {
+    padding: 12px 24px;
+    font-size: 0.82rem;
+  }
+
+  .hero-scroll { display: none; }
+}

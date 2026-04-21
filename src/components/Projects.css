@@ -144,9 +144,13 @@
 }
 
 @media (max-width: 600px) {
+  #projects { padding: 44px 0; }
+
   .projects-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
   }
+
+  .projects-grid { max-width: 100%; }
 }

@@ -138,4 +138,21 @@
     .nav-links {
         display: none;
     }
+
+    /* Disable the floating pill on mobile — keep a simple sticky bar */
+    #nav.scrolled {
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+        width: 100%;
+        border-radius: 0;
+        height: var(--nav-h);
+        padding: 0 24px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid color-mix(in srgb, var(--fg) 8%, transparent);
+        box-shadow: none;
+    }
 }
