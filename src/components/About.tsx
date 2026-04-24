@@ -16,10 +16,6 @@ export default function About() {
       <div className="container">
         <p className="section-label reveal">About me</p>
         <div className="about-grid">
-          <div className="about-portrait reveal">
-            <div className="thumb-color" style={{ background: 'var(--blue)' }} />
-            <span className="portrait-label">portrait photo</span>
-          </div>
           <div className="about-content reveal">
             <h2 className="section-heading">
               Building software that's secure from the ground up.

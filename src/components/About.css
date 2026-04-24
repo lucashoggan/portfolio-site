@@ -3,42 +3,19 @@
   background: var(--bg);
 }
 
+#about .section-label {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1fr;
+  gap: 0;
   align-items: start;
-}
-
-.about-portrait {
-  aspect-ratio: 4/5;
-  border-radius: 16px;
-  background: var(--bg2);
-  position: relative;
-  overflow: hidden;
-}
-
-.about-portrait::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    45deg,
-    color-mix(in srgb, var(--fg) 4%, transparent) 0px,
-    color-mix(in srgb, var(--fg) 4%, transparent) 1px,
-    transparent 1px,
-    transparent 16px
-  );
-}
-
-.portrait-label {
-  position: absolute;
-  bottom: 20px; left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.72rem;
-  font-family: monospace;
-  color: var(--fg-muted);
-  white-space: nowrap;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .about-content { padding-top: 8px; }
@@ -80,33 +57,8 @@
   border: 1px solid color-mix(in srgb, var(--blue) 25%, transparent);
 }
 
-.thumb-color {
-  position: absolute;
-  inset: 0;
-  opacity: 0.15;
-}
-
-@media (max-width: 900px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 48px;
-  }
-  .about-portrait {
-    aspect-ratio: 4/3;
-    max-height: 320px;
-  }
-}
-
 @media (max-width: 600px) {
   #about { padding: 44px 0; }
-
-  .about-grid { gap: 20px; }
-
-  .about-portrait {
-    aspect-ratio: 16/9;
-    max-height: none;
-    border-radius: 12px;
-  }
 
   .about-content p {
     font-size: 0.88rem;
