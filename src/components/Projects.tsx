@@ -1,4 +1,4 @@
-import './Projects.css';
+import "./Projects.css";
 
 export default function Projects() {
   return (
@@ -14,7 +14,13 @@ export default function Projects() {
           <a href="#contact" className="projects-cta">
             Work together
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </a>
         </div>
@@ -22,28 +28,36 @@ export default function Projects() {
         <div className="projects-grid">
           <article className="project-card reveal">
             <div className="project-thumb">
-              <div className="thumb-color" style={{ background: 'var(--blue)' }} />
-              <div className="project-thumb-label">app screenshot</div>
+              <img src="/stonemire-full.jpg" />
               <div className="project-view-overlay">
-                <span className="view-link">
+                <a
+                  href="https://stonemire.lucashoggan.co.uk"
+                  target="_blank"
+                  className="view-link"
+                >
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path
+                      d="M3 8h10M9 4l4 4-4 4"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                   View project
-                </span>
+                </a>
               </div>
             </div>
             <div className="project-body">
               <div className="project-tags">
                 <span className="tag">Cryptography</span>
-                <span className="tag blue">Python</span>
-                <span className="tag terra">End-to-end</span>
+                <span className="tag">WebSockets</span>
+                <span className="tag">Express</span>
               </div>
               <h3 className="project-title">Encrypted Chat App</h3>
               <p className="project-desc">
-                A peer-to-peer messaging app using AES-256 and RSA key exchange
-                — built from scratch to explore applied cryptography and secure
-                transport protocols.
+                A end to end encrypted messaging app using asymmetric encryption
+                and websockets to make a quick, secure communication platform
               </p>
             </div>
           </article>
